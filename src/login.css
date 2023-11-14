@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: #f0f2f5;
+    /* min-width: 500px; */
+
+}
+
+.right-contant {
+    background: white;
+    box-shadow: 0 0 10px 8px #d8d8d8;
+    border-radius: 7px;
+}
+
+.email {
+    margin: 25px 25px 6px;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid rgb(195, 195, 195);
+    width: 24vw;
+    height: 7vh;
+    font-size: 17px;
+}
+
+.right-contant input:focus {
+    border: none;
+    border: 1px solid #1877f2;
+    outline: none;
+    box-shadow: 0 0 4px 2px #71a3e4;
+}
+
+.password {
+    margin: 6px 25px 10px;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid rgb(195, 195, 195);
+    width: 24vw;
+    height: 7vh;
+    font-size: 17px;
+}
+
+.btn-login {
+    border: 1px solid rgb(195, 195, 195);
+    width: 24vw;
+    height: 7vh;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #1877f2;
+    font-size: 27px;
+    line-height: 48px;
+    color: white;
+    padding-bottom: 45px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+}
+
+.forgottenpassword {
+    font-size: 15px;
+    margin: 0 25px 35px;
+    color: #1877f2;
+
+}
+
+.line {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 10px 16px 20px;
+    text-align: center;
+}
+
+.forgottenpassword:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup {
+    font-family: inherit;
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    line-height: 48px;
+    padding: 5px 16px;
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.signup:hover {
+    cursor: pointer;
+    background-color: #3fa02c;
+}
+
+.left-contant {
+    /* border: 2px solid black; */
+    height: 48vh;
+    width: 36vw;
+}
+
+.left-contant h1 {
+    font-size: 70px;
+    color: #1877f2;
+    cursor: context-menu;
+}
+
+.left-contant h3 {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 999px) {
+    .email {
+        width: 33vw;
+    }
+
+    .password {
+        width: 33vw;
+    }
+
+    .btn-login {
+        width: 33vw;
+    }
+
+    .left-contant h1 {
+        font-size: 65px;
+    }
+
+    .left-contant h3 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .email {
+        width: 36vw;
+    }
+
+    .password {
+        width: 36vw;
+    }
+
+    .btn-login {
+        width: 36vw;
+    }
+
+    .signup {
+        font-size: 16px;
+    }
+
+    .left-contant {
+        width: 38vw;
+    }
+
+    .left-contant h1 {
+        font-size: 60px;
+    }
+
+    .left-contant h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .email {
+        width: 41vw;
+    }
+
+    .password {
+        width: 41vw;
+    }
+
+    .btn-login {
+        width: 41vw;
+    }
+
+    .left-contant h1 {
+        font-size: 55px;
+    }
+
+    .left-contant h3 {
+        font-size: 17px;
+    }
+
+    .left-contant h3 {
+        font-size: 17px;
+    }
+
+    .left-contant h3 {
+        font-size: 17px;
+    }
+
+    .left-contant {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .left-contant h1 {
+        font-size: 45px;
+    }
+
+    .left-contant h3 {
+        font-size: 13px;
+    }
+
+    .left-contant {
+        width: 37vw;
+    }
+
+    .email {
+
+        width: 41vw;
+    }
+
+    .password {
+
+        width: 41vw;
+    }
+
+    .btn-login {
+        width: 41vw;
+    }
+
+    .forgottenpassword {
+        font-size: 15px;
+    }
+
+    .signup {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .left-contant {
+        height: 37vh;
+    }
+
+    .left-contant h1 {
+        font-size: 40px;
+    }
+
+    .left-contant h3 {
+        font-size: 11px;
+    }
+
+    .email {
+        width: 37vw;
+        height: 3vh;
+        font-size: 15px;
+    }
+
+    .password {
+        width: 37vw;
+        height: 3vh;
+        font-size: 15px;
+    }
+
+    .btn-login {
+        width: 37vw;
+        height: 3vh;
+        font-size: 17px;
+    }
+
+    .forgottenpassword {
+        font-size: 12px;
+        margin: 0 25px 15px;
+    }
+
+    .line {
+        margin: 10px 16px 15px;
+    }
+
+    .signup {
+        line-height: 38px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .left-contant h1 {
+        font-size: 30px;
+    }
+
+    .left-contant h3 {
+        font-size: 8px;
+    }
+
+    .btn-login {
+        width: 37vw;
+        line-height: 36px;
+        margin-bottom: 10px;
+        padding-bottom: 34px;
+    }
+
+    .signup {
+        padding: 0px 13px;
+    }
+
+    .left-contant {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .email {
+        margin: 15px 25px 6px;
+        width: 42vw;
+    }
+    .password{
+        width: 42vw;
+    }
+    .btn-login{
+        width: 42vw;
+    }
+    .btn-login{
+        line-height: 31px;
+        margin-bottom: 9px;
+        padding-bottom: 31px;
+    }
+    .line {
+        margin: 10px 16px 9px;
+    }
+    .signup {
+        font-size: 10px;
+        margin-bottom: 17px;
+    }
+    .left-contant {
+        height: 26vh;
+    }
+    .left-contant h1 {
+        font-size: 27px;
+    }
+    .left-contant h3 {
+        font-size: 6px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .left-contant h1 {
+        font-size: 24px;
+    }
+    .left-contant h3{
+        line-height: 19px;
+    }
+    .email{ 
+    margin: 15px 5px 6px;
+    width: 51vw;
+}
+    .password{
+        margin: 15px 5px 6px;
+    width: 51vw;
+    }
+.btn-login{
+    margin: 15px 5px 6px;
+    width: 51vw;
+}
+}
