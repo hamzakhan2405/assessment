@@ -79,9 +79,11 @@ const Signup = () => {
                                 id="Surname"
                                 onChange={newHandleChange}
                             />
-                            <div className="validation">
-                                {newerrors.firstName && <p className="valid" style={{ color: "red", fontSize: "15px", margin: "2px 10px 2px" }}>{newerrors.firstName}</p>}
-                                {newerrors.surName && <p style={{ color: "red", fontSize: "15px", marginLeft: "270px", }}>{newerrors.surName}</p>}
+                            <div className="validation">  
+                                {newerrors.firstName && <p className="valid" style={{ color: "red", fontSize: "13px", margin: "2px 5px 2px",  }}>{newerrors.firstName}</p>}
+                                <div className="surnameError">
+                                {newerrors.surName && <p >{newerrors.surName}</p>}
+                                </div>
                             </div>
                         </div>
                         <div className="input-Contant">
@@ -94,7 +96,7 @@ const Signup = () => {
                                     onChange={newHandleChange}
                                 />
                             </center>
-                            {newerrors.email && <p style={{ color: "red", fontSize: "15px", margin: "2px 10px 2px" }}>{newerrors.email}</p>}
+                            {newerrors.email && <p style={{ color: "red", fontSize: "13px", margin: "2px 10px 2px" }}>{newerrors.email}</p>}
                             <center>
                                 <input
                                     className="input-password"
@@ -106,7 +108,7 @@ const Signup = () => {
                                     onChange={newHandleChange}
                                 />
                             </center>
-                            {newerrors.newPassword && <p style={{ color: "red", fontSize: "15px", margin: "2px 10px 2px" }}>{newerrors.newPassword}</p>}
+                            {newerrors.newPassword && <p style={{ color: "red", fontSize: "13px", margin: "2px 10px 2px" }}>{newerrors.newPassword}</p>}
                         </div>
                         <center>
                             <button className="signup-btn" type="submit">Sign Up</button>

@@ -52,6 +52,11 @@
    
     
 }
+.surnameError p{
+    margin-left: 270px;
+    color: red;
+    font-size: 15px;
+}
 .inner-contant input:focus{
     border: none;
     border: 1px solid  #929292;
@@ -111,6 +116,9 @@
     .contant p {
         font-size: 15px; 
     }
+    .surnameError p{
+        margin-left: 208px;
+    }
 }
  @media screen and (max-width: 482px){
     .inner-contant input {
@@ -119,6 +127,10 @@
     .signup-btn {
         width: 22vw;
     }
+    .surnameError p{
+        margin-left: 180px;
+    }
+   
 }
 @media screen and (max-width: 409px){
     .inner-contant input {
@@ -139,6 +151,12 @@
     .contant {
         margin: 15px;
     }
+    .surnameError p{
+        margin-left: 140px;
+    }
+    .valid{
+        font-size: 13px;
+    }
 
 }
 @media screen and (max-width: 326px){
@@ -154,6 +172,9 @@
     }
     .contant p {
         font-size: 11px;
+    }
+    .surnameError p{
+        margin-left: 120px;
     }
 }
     
